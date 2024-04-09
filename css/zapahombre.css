@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+nav{
+    text-align: center;
+    padding: 20px 0 0 0;
+    font-size: 20px;
+    background: black;
+    border-radius: 0%;
+    height: 70px;
+}
+
+nav > a{
+    margin-right: 110px;
+    text-decoration: none;
+    background: white;
+    color: black;
+    border-radius: 5%;
+    display: inline-block;
+    text-align: center;
+    height: 24px;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.titulosz{
+    text-align: center;
+    color: white;
+    font-family: 'Kirsty';
+    font-size: 60px;
+    background: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
+    margin-left: 480px;
+    margin-right: 480px;
+
+}
+.filtro-btns {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.filtro-btns li {
+    display: inline;
+    margin-right: 10px; 
+}
+
+.filtro-btn {
+    padding: 10px 20px; 
+    background-color: #000000; 
+    color: #ffffffad;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filtro-btn:hover {
+    background-color: #1a000000;
+}
+
+body{
+    background: rgb(120, 120, 120)
+}
+
+.imagenes-filtrar{
+    padding: 50px 0;
+    width: 80%;
+    height: 400px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-2{
+    padding: 50px 0;
+    width: 80%;
+    height: 400px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}

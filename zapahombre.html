@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/zapahombre.css" />
+    <title>Urban Emporium</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="#">Calzado hombre</a>
+          <a href="#">Calzado mujer</a>
+          <a href="#">Calzado niño</a>
+          <a href="#">Calzado niña</a>
+          <a href="#">Calzado unisex</a>
+          <a href="#">carrito</a>
+          <a href="#">Buscar</a>
+        </nav>
+      </header>
+    <h2 class="tituloz">FILTROS</h1>
+        
+        <ul class="filtro-btns">
+            <li><button class="filtro-btn" onclick="filtrar('todo')">Todo</button></li>
+            <li><button class="filtro-btn" onclick="filtrar('categoria1')">Categoría 1</button></li>
+            <li><button class="filtro-btn" onclick="filtrar('categoria2')">Categoría 2</button></li>
+            <li><button class="filtro-btn" onclick="filtrar('categoria3')">Categoría 3</button></li>
+        </ul>
+        
+        
+        <div id="elementos-a-filtrar">
+            <div class="imagenes-filtrar">
+                <img src="img/img1.jpeg" alt="Imagen 1">
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias omnis amet odit architecto consectetur eaque?</p>
+                </div>
+                
+            </div>
+            <div class="elemento categoria2">
+                <div class="img-2">
+                    <img src="img/img2.jpeg" alt="Imagen 2">
+                    <div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias omnis amet odit architecto consectetur eaque?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="elemento categoria3">
+                <img src="img/img3.jpeg" alt="Imagen 3">
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias omnis amet odit architecto consectetur eaque?</p>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+           
+            function filtrar(categoria) {
+                const elementos = document.querySelectorAll('.elemento');
+                elementos.forEach(elemento => {
+                    if (categoria === 'todo' || elemento.classList.contains(categoria)) {
+                        elemento.style.display = 'block';
+                    } else {
+                        elemento.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+</body>
+</html>

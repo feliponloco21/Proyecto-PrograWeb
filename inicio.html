@@ -1,46 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/estilo.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Urban Emporium</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#">Calzado hombre</a>
-        <a href="#">Calzado mujer</a>
-        <a href="#">Calzado niño</a>
-        <a href="#">Calzado niña</a>
-        <a href="#">Calzado unisex</a>
-        <a href="#">carrito</a>
-        <a href="#">Buscar</a>
-      </nav>
-    </header>
-    <h1 class="titulos">URBAN EMPORIUM</h1>
-    <h3>Tienda de calzado para todas las edades y epocas</h3>
-    <br />
+</head>
+<body>
+  <div class="nav-estilo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="inicio.html" style="color: white;">UE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="zapahombre.html" style="color: white;">Calzado hombre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Calzado mujer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Calzado niño</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Calzado niña</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Calzado unisex</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 custom-btn" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+  </div>
+    <h1 class="titulos"><b>URBAN EMPORIUM</b></h1>
+    <h3>Tienda de calzado para todas las edades y épocas</h3>
+
     <div class="imagen-zap">
-      <img src="img/img1.jpeg" alt="" />
-      <div class="cont-text">
-        <br><h4>Air Force 1</h4><br>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur aperiam doloribus itaque porro modi earum exercitationem possimus eius quasi corporis, libero sequi magni consectetur fuga ipsa neque. Ipsa, dicta ad.</p>
-      </div>
+        <img src="img/img1.jpeg" alt="" class="img-ampliada">
+        <div class="cont-text">
+            <br>
+            <h4>Air Force 1</h4>
+            <br>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur aperiam doloribus itaque porro modi earum exercitationem possimus eius quasi corporis, libero sequi magni consectetur fuga ipsa neque. Ipsa, dicta ad.
+            </p>
+        </div>
     </div>
     <div class="imagen-zap">
-      <img src="img/img2.jpeg" alt="" />
-      <div class="cont-text">
-        <br><h4>Nike Air Jordan 1</h4><br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita possimus quod at ex iste! Non vel odit voluptas sed! Porro natus voluptatem, inventore consequuntur magnam autem architecto blanditiis sit facilis.</p>
-      </div>
+        <img src="img/img2.jpeg" alt="" class="img-ampliada">
+        <div class="cont-text">
+            <br>
+            <h4>Nike Air Jordan 1</h4>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita possimus quod at ex iste! Non vel odit voluptas sed! Porro natus voluptatem, inventore consequuntur magnam autem architecto blanditiis sit facilis.
+            </p>
+        </div>
     </div>
     <div class="imagen-zap">
-      <img src="img/img3.jpeg" alt="" />
-      <div class="cont-text">
-        <br><h4>Blazer Mid '77 Next Nature</h4><br>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga repellat minus corporis suscipit expedita autem nemo neque pariatur commodi? Ullam, eligendi dolore totam veritatis ducimus reiciendis repellendus? Voluptate, perspiciatis iste.</p>
-      </div>
+        <img src="img/img3.jpeg" alt="" class="img-ampliada">
+        <div class="cont-text">
+            <br>
+            <h4>Blazer Mid '77 Next Nature</h4>
+            <br>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga repellat minus corporis suscipit expedita autem nemo neque pariatur commodi? Ullam, eligendi dolore totam veritatis ducimus reiciendis repellendus? Voluptate, perspiciatis iste.
+            </p>
+        </div>
     </div>
-  </body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
