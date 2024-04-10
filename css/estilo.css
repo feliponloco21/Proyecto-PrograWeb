@@ -177,12 +177,6 @@ body{
     overflow: hidden;
 }
 
-#carouselExampleIndicators{
-    background: transparent;
-    width: 500px;
-    height: auto;
-}
-
 .img-cora button img {
     width: 60px;
     height: auto;
@@ -289,3 +283,4 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
+
