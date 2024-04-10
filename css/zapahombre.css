@@ -37,52 +37,47 @@ nav > a{
     margin: 50px;
     margin-left: 480px;
     margin-right: 480px;
-
-}
-.filtro-btns {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
-.filtro-btns li {
-    display: inline;
-    margin-right: 10px; 
-}
-
-.filtro-btn {
-    padding: 10px 20px; 
-    background-color: #000000; 
-    color: #ffffffad;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.filtro-btn:hover {
-    background-color: #1a000000;
-}
 
 body{
     background: rgb(120, 120, 120)
 }
 
-.imagenes-filtrar{
-    padding: 50px 0;
-    width: 80%;
-    height: 400px;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
+.nav-item{
+    font-size: 17px;
+    transition: transform 0.3s;
 }
 
-.img-2{
-    padding: 50px 0;
-    width: 80%;
-    height: 400px;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
+.nav-item:hover{
+    transform: scale(1.2);
+}
+
+.custom-btn {
+    background-color: #1F2328;
+    color: #FFFFFF;
+    border-color: #1F2328;
+}
+
+.custom-btn:hover,
+.custom-btn:active {
+    background-color: #6D747A;
+    color: #FFFFFF;
+    border-color: #6D747A;
+}
+
+.navbar-brand{
+    font-size: 35px;
+    height: 60px;
+    width: 40px;
+}
+
+.nav-estilo{
+    font-family: 'Kirsty';
+}
+
+.cartasgeneral{
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% ;
 }

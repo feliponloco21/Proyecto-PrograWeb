@@ -3,67 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/zapahombre.css" />
     <title>Urban Emporium</title>
 </head>
 <body>
     <header>
-        <nav>
-          <a href="#">Calzado hombre</a>
-          <a href="#">Calzado mujer</a>
-          <a href="#">Calzado niño</a>
-          <a href="#">Calzado niña</a>
-          <a href="#">Calzado unisex</a>
-          <a href="#">carrito</a>
-          <a href="#">Buscar</a>
-        </nav>
-      </header>
-    <h2 class="tituloz">FILTROS</h1>
-        
-        <ul class="filtro-btns">
-            <li><button class="filtro-btn" onclick="filtrar('todo')">Todo</button></li>
-            <li><button class="filtro-btn" onclick="filtrar('categoria1')">Categoría 1</button></li>
-            <li><button class="filtro-btn" onclick="filtrar('categoria2')">Categoría 2</button></li>
-            <li><button class="filtro-btn" onclick="filtrar('categoria3')">Categoría 3</button></li>
-        </ul>
-        
-        
-        <div id="elementos-a-filtrar">
-            <div class="imagenes-filtrar">
-                <img src="img/img1.jpeg" alt="Imagen 1">
-                <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias omnis amet odit architecto consectetur eaque?</p>
-                </div>
+        <div class="nav-estilo">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="navbar-brand" href="inicio.html" style="color: white;">UE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 
-            </div>
-            <div class="elemento categoria2">
-                <div class="img-2">
-                    <img src="img/img2.jpeg" alt="Imagen 2">
-                    <div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias omnis amet odit architecto consectetur eaque?</p>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="zapahombre.html" style="color: white;">Calzado hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Calzado mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Calzado niño</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Calzado niña</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Calzado unisex</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0 custom-btn" type="submit">Buscar</button>
+                    </form>
                 </div>
-            </div>
-            <div class="elemento categoria3">
-                <img src="img/img3.jpeg" alt="Imagen 3">
-                <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias omnis amet odit architecto consectetur eaque?</p>
-                </div>
-            </div>
+            </nav>
         </div>
-        
-        <script>
-           
-            function filtrar(categoria) {
-                const elementos = document.querySelectorAll('.elemento');
-                elementos.forEach(elemento => {
-                    if (categoria === 'todo' || elemento.classList.contains(categoria)) {
-                        elemento.style.display = 'block';
-                    } else {
-                        elemento.style.display = 'none';
-                    }
-                });
-            }
-        </script>
+       
+      </header>
+      <div class=""></div>
+    <h2 class="tituloz">Zapatillas hombre</h2>
+        <div class="cartasgeneral">
+            <div class="card" style="width: 18rem;">
+                <img src="img/img1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jordan AF1</h5>
+                  <p class="card-text">Zapatilla hombre <br> $199.990CLP </p>
+                  <a href="#" class="btn btn-primary">IR</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="img/img2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Blazer Mid '77 Vintage</h5>
+                  <p class="card-text">Zapatillas Hombre <br> $112.990CLP</p>
+                  <a href="#" class="btn btn-primary">IR</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="img/img3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jordan air 1 mid</h5>
+                  <p class="card-text">Zapatillas hombre <br> $129.990CLp</p>
+                  <a href="#" class="btn btn-primary">IR</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="img/img2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="img/img2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="img/img2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="img/img2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="img/img2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="img/img2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>     
+        </div>
+
 </body>
 </html>
