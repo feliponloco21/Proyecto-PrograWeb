@@ -77,7 +77,35 @@ body{
 }
 
 .cartasgeneral{
-    gap: 20px;
+    gap: 50px;
     display: grid;
     grid-template-columns: 20% 20% 20% ;
+    margin: 150px;
+}
+
+.carts{
+    background-color: #1F2328;
+}
+
+.btn btn-primary{
+    border-color: black;
+}
+
+.tituloss{
+    text-align: center;
+    color: white;
+    font-family: 'Kirsty';
+    font-size: 60px;
+    background: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
+    margin-left: 480px;
+    margin-right: 480px;
+}
+
+
+.cartasgene2{
+    margin: 100px;
+    gap: 10px;
 }
