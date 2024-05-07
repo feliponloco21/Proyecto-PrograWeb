@@ -44,6 +44,7 @@ h5{
     color: white;
     border-radius: 30px;
     padding: 20px;
+    margin-top: 50px;
 }
 
 h4{
@@ -61,7 +62,9 @@ h4{
 .nav-item{
     font-size: 17px;
     transition: transform 0.3s;
+    color: white;
 }
+
 
 .nav-item:hover{
     transform: scale(1.2);
@@ -91,6 +94,18 @@ h4{
     justify-content: space-evenly;
 }
 
+.zapa{
+    padding: 50px 0;
+    width: 60%;
+    height: 400px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+
 .img-ampliada {
     transition: transform 0.3s;
 }
@@ -103,6 +118,7 @@ h4{
     font-size: 35px;
     height: 60px;
     width: 40px;
+    color: white;
 }
 
 .nav-estilo{

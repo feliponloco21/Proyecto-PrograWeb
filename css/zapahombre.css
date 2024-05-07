@@ -4,28 +4,6 @@
     box-sizing:border-box;
 }
 
-nav{
-    text-align: center;
-    padding: 20px 0 0 0;
-    font-size: 20px;
-    background: black;
-    border-radius: 0%;
-    height: 70px;
-}
-
-nav > a{
-    margin-right: 110px;
-    text-decoration: none;
-    background: white;
-    color: black;
-    border-radius: 5%;
-    display: inline-block;
-    text-align: center;
-    height: 24px;
-    padding: 3px;
-    border-radius: 8px;
-}
-
 .titulosz{
     text-align: center;
     color: white;
@@ -47,6 +25,7 @@ body{
 .nav-item{
     font-size: 17px;
     transition: transform 0.3s;
+    color: white;
 }
 
 .nav-item:hover{
@@ -70,6 +49,7 @@ body{
     font-size: 35px;
     height: 60px;
     width: 40px;
+    color: white;
 }
 
 .nav-estilo{
