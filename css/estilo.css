@@ -17,24 +17,19 @@
     margin-right: 480px;
 }
 
+#carouselExampleCaptions{
+    width: 1000px;
+    height: 1000px;
+    margin-left: 18%;
+}
+
+
 h5{
     color: #1F2328;
     font-family: 'Kirsty';
     font-size: 30px;
     font-weight: bold;
-}
-
-.custom-btn {
-    background-color: #1F2328;
-    color: #FFFFFF;
-    border-color: #1F2328;
-}
-
-.custom-btn:hover,
-.custom-btn:active {
-    background-color: #6D747A;
-    color: #FFFFFF;
-    border-color: #6D747A;
+    text-align: center;
 }
 
 .cont-text{
@@ -59,12 +54,24 @@ h4{
     overflow: hidden;
 }
 
+.custom-btn {
+    background-color: #1F2328;
+    color: #FFFFFF;
+    border-color: #1F2328;
+}
+
+.custom-btn:hover,
+.custom-btn:active {
+    background-color: #6D747A;
+    color: #FFFFFF;
+    border-color: #6D747A;
+}
+
 .nav-item{
     font-size: 17px;
     transition: transform 0.3s;
-    color: white;
+    color: white; 
 }
-
 
 .nav-item:hover{
     transform: scale(1.2);
@@ -104,7 +111,6 @@ h4{
     justify-content: space-evenly;
     margin-bottom: 100px;
 }
-
 
 .img-ampliada {
     transition: transform 0.3s;
@@ -353,7 +359,6 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
 }
 
 nav ul li a {
@@ -372,7 +377,6 @@ footer {
     padding: 20px;
 }
 
-/* Estilos específicos para cada sección */
 .redes-sociales ul {
     list-style-type: none;
     padding: 0;
@@ -402,4 +406,14 @@ footer {
 
 .cartaredes{
     margin: 30px;
+    background: center;
+}
+
+#map{
+    height: 500px;
+	width: 100%;
+}
+
+.navbar-brand{
+    margin-left: 10px;
 }
