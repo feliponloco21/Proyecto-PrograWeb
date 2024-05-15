@@ -1,7 +1,6 @@
 const nikeCoords = { lat: -33.1327619, lng: -71.5636687};
 let map;
 let marker;
-let autocomplete;
 
 async function initMap() {
   const { Map } = await google.maps.importLibrary("maps");
@@ -15,6 +14,7 @@ async function initMap() {
   });
 }
 
+<<<<<<< HEAD
 $(document).ready(function() {
   $('#brand-filter').change(function() {
       var selectedBrand = $(this).val();
@@ -29,3 +29,5 @@ $(document).ready(function() {
       }
   });
 });
+=======
+>>>>>>> 5d9436ce341a57d80df30cab993602ee44ad7c4a

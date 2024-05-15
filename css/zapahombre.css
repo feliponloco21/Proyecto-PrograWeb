@@ -50,6 +50,7 @@ body{
     height: 60px;
     width: 40px;
     color: white;
+    margin-left: 10px;
 }
 
 .nav-estilo{
@@ -90,6 +91,7 @@ body{
     gap: 10px;
 }
 
+<<<<<<< HEAD
 
 @media (max-width: 576px) {
     .card {
@@ -104,3 +106,5 @@ body{
 .card-text{
     color: #FFFFFF;
 }
+=======
+>>>>>>> 5d9436ce341a57d80df30cab993602ee44ad7c4a
