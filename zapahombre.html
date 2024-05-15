@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="css/zapahombre.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
     <title>Urban Emporium</title>
 </head>
 <body>
@@ -48,9 +50,17 @@
       </header>
       <div class="tituloss">
         <h2>Zapatillas hombre</h2> 
+        <div class="filtro-marca">
+          <label for="brand-filter" class="form-label">Filtrar por Marca:</label>
+          <select class="form-select" id="brand-filter">
+              <option value="all">Todas las marcas</option>
+              <option value="Jordan">Jordan</option>
+              <option value="Nike">Nike</option>
+          </select>
+      </div>
       </div>
         <div class="cartasgeneral">
-            <div class="card bg-dark" style="width: 18rem;">
+            <div class="card bg-dark" style="width: 18rem;" data-brand="Jordan">
                 <img src="img/img1.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title" style="color: aliceblue;">Jordan AF1</h5>
@@ -58,7 +68,7 @@
                   <a href="espZapa.html" class="btn btn-dark">IR</a>
                 </div>
               </div>
-              <div class="card bg-dark" style="width: 18rem;">
+              <div class="card bg-dark" style="width: 18rem;" data-brand="Nike">
                 <img src="img/img2.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"style="color: aliceblue;">Nike Blazer Mid '77 Vintage</h5>
@@ -66,7 +76,7 @@
                   <a href="#" class="btn btn-dark">IR</a>
                 </div>
               </div>
-              <div class="card bg-dark" style="width: 18rem;">
+              <div class="card bg-dark" style="width: 18rem;" data-brand="Jordan">
                 <img src="img/img3.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"style="color: aliceblue;">Jordan air 1 mid</h5>
@@ -74,7 +84,7 @@
                   <a href="#" class="btn btn-dark">IR</a>
                 </div>
               </div>
-              <div class="card bg-dark" style="width: 18rem;">
+              <div class="card bg-dark" style="width: 18rem;" data-brand="Jordan">
                 <img src="img/img4.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"style="color: aliceblue;">Jordan Max aura 5</h5>
@@ -82,7 +92,7 @@
                   <a href="#" class="btn btn-dark">IR</a>
                 </div>
               </div>
-              <div class="card bg-dark" style="width: 18rem;">
+              <div class="card bg-dark" style="width: 18rem;" data-brand="Jordan">
                 <img src="img/img5.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"style="color: aliceblue;">Jordan Spizike Low</h5>
@@ -90,7 +100,7 @@
                   <a href="#" class="btn btn-dark">IR</a>
                 </div>
               </div>
-              <div class="card bg-dark" style="width: 18rem;">
+              <div class="card bg-dark" style="width: 18rem;" data-brand="Jordan">
                 <img src="img/img6.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"style="color: aliceblue;">Jordan Stay Loyal 3</h5>
@@ -98,7 +108,7 @@
                   <a href="#" class="btn btn-dark">IR</a>
                 </div>
               </div>
-              <div class="card bg-dark" style="width: 18rem;">
+              <div class="card bg-dark" style="width: 18rem;" data-brand="Nike">
                 <img src="img/img7.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"style="color: aliceblue;">Nike Dunk Low SE</h5>
@@ -106,7 +116,7 @@
                   <a href="#" class="btn btn-dark">IR</a>
                 </div>
               </div>
-              <div class="card bg-dark" style="width: 18rem;">
+              <div class="card bg-dark" style="width: 18rem;" data-brand="Nike">
                 <img src="img/img8.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"style="color: aliceblue;">Nike Dunk Low Retro NBHD</h5>
@@ -114,7 +124,7 @@
                   <a href="#" class="btn btn-dark">IR</a>
                 </div>
               </div>
-              <div class="card bg-dark" style="width: 18rem;">
+              <div class="card bg-dark" style="width: 18rem;" data-brand="Nike">
                 <img src="img/im9.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"style="color: aliceblue;">Nike Blazer Mid Pro GT</h5>

@@ -15,3 +15,18 @@ async function initMap() {
     map: map, 
   });
 }
+
+$(document).ready(function() {
+  $('#brand-filter').change(function() {
+      var selectedBrand = $(this).val();
+
+      console.log("Marca seleccionada:", selectedBrand);
+
+      $('.card').hide();
+      if (selectedBrand === 'all') {
+          $('.card').show();
+      } else {
+          $('.card[data-brand="' + selectedBrand + '"]').show();
+      }
+  });
+});

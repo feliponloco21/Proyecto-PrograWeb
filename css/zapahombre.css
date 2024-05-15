@@ -73,7 +73,7 @@ body{
 
 .tituloss{
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Kirsty';
     font-size: 60px;
     background: black;
@@ -88,4 +88,19 @@ body{
 .cartasgene2{
     margin: 100px;
     gap: 10px;
+}
+
+
+@media (max-width: 576px) {
+    .card {
+        max-width: 100%;
+    }
+}
+
+.card-title{
+    color: #FFFFFF;
+}
+
+.card-text{
+    color: #FFFFFF;
 }
