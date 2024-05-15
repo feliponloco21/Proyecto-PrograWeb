@@ -23,7 +23,6 @@
     margin-left: 18%;
 }
 
-
 h5{
     color: #1F2328;
     font-family: 'Kirsty';
@@ -125,6 +124,7 @@ h4{
     height: 60px;
     width: 40px;
     color: white;
+    margin-left: 10px;
 }
 
 .nav-estilo{
@@ -410,10 +410,6 @@ footer {
 }
 
 #map{
-    height: 500px;
+    height: 800px;
 	width: 100%;
-}
-
-.navbar-brand{
-    margin-left: 10px;
 }

@@ -50,6 +50,7 @@ body{
     height: 60px;
     width: 40px;
     color: white;
+    margin-left: 10px;
 }
 
 .nav-estilo{
@@ -89,3 +90,4 @@ body{
     margin: 100px;
     gap: 10px;
 }
+
