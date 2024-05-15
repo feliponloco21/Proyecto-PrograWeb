@@ -1,5 +1,4 @@
 const nikeCoords = { lat: -33.1327619, lng: -71.5636687};
-
 let map;
 let marker;
 let autocomplete;
