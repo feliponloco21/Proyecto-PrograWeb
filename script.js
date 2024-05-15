@@ -14,7 +14,6 @@ async function initMap() {
   });
 }
 
-<<<<<<< HEAD
 $(document).ready(function() {
   $('#brand-filter').change(function() {
       var selectedBrand = $(this).val();
@@ -29,5 +28,3 @@ $(document).ready(function() {
       }
   });
 });
-=======
->>>>>>> 5d9436ce341a57d80df30cab993602ee44ad7c4a
