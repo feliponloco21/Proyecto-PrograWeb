@@ -8,7 +8,8 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="css/zapahombre.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/producto.js"></script>
     <title>Urban Emporium</title>
 </head>
 <body>
@@ -69,6 +70,7 @@
                   <h5 class="card-title" style="color: aliceblue;">Jordan AF1</h5>
                   <p class="card-text" style="color: aliceblue;">Zapatilla hombre <br> $199.990CLP </p>
                   <a href="espZapa.html" class="btn btn-dark">IR</a>
+                  <button onclick="agregarAlCarrito(0)" class="btn btn-primary">Agregar al carrito</button>
                 </div>
               </div>
               <div class="card bg-dark" style="width: 18rem;" data-brand="Nike">
@@ -77,65 +79,72 @@
                   <h5 class="card-title"style="color: aliceblue;">Nike Blazer Mid '77 Vintage</h5>
                   <p class="card-text"style="color: aliceblue;">Zapatillas Hombre <br> $112.990CLP</p>
                   <a href="#" class="btn btn-dark">IR</a>
+                  <button onclick="agregarAlCarrito(0)" class="btn btn-primary">Agregar al carrito</button>
                 </div>
               </div>
               <div class="card bg-dark" style="width: 18rem;" data-brand="Jordan">
                 <img src="img/img3.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"style="color: aliceblue;">Jordan air 1 mid</h5>
-                  <p class="card-text"style="color: aliceblue;">Zapatillas hombre <br> $129.990CLp</p>
-                  <a href="#" class="btn btn-dark">IR</a>
+                  <h5 class="card-title" style="color: aliceblue;">Jordan air 1 mid</h5>
+                  <p class="card-text" style="color: aliceblue;">Zapatilla hombre <br> $129.990CLP</p>
+                  <a href="espZapa.html" class="btn btn-dark">IR</a>
+                  <button onclick="agregarAlCarrito(0)" class="btn btn-primary">Agregar al carrito</button>
                 </div>
               </div>
               <div class="card bg-dark" style="width: 18rem;" data-brand="Jordan">
                 <img src="img/img4.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"style="color: aliceblue;">Jordan Max aura 5</h5>
-                  <p class="card-text"style="color: aliceblue;">Zapatillas Hombre <br> $134.990CLP</p>
-                  <a href="#" class="btn btn-dark">IR</a>
+                  <h5 class="card-title" style="color: aliceblue;">Jordan Max aura 5</h5>
+                  <p class="card-text" style="color: aliceblue;">Zapatilla hombre <br> $134.990CLP</p>
+                  <a href="espZapa.html" class="btn btn-dark">IR</a>
+                  <button onclick="agregarAlCarrito(0)" class="btn btn-primary">Agregar al carrito</button>
                 </div>
               </div>
               <div class="card bg-dark" style="width: 18rem;" data-brand="Jordan">
                 <img src="img/img5.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"style="color: aliceblue;">Jordan Spizike Low</h5>
-                  <p class="card-text"style="color: aliceblue;">Zapatilla hombre <br> $162.990CLP</p>
-                  <a href="#" class="btn btn-dark">IR</a>
+                  <h5 class="card-title" style="color: aliceblue;">Jordan Spizike Low</h5>
+                  <p class="card-text" style="color: aliceblue;">Zapatilla hombre <br> $162.990CLP</p>
+                  <a href="espZapa.html" class="btn btn-dark">IR</a>
+                  <button onclick="agregarAlCarrito(0)" class="btn btn-primary">Agregar al carrito</button>
                 </div>
               </div>
               <div class="card bg-dark" style="width: 18rem;" data-brand="Jordan">
                 <img src="img/img6.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"style="color: aliceblue;">Jordan Stay Loyal 3</h5>
-                  <p class="card-text"style="color: aliceblue;">Zapatilla para niño <br> $99.990CLP</p>
-                  <a href="#" class="btn btn-dark">IR</a>
+                  <h5 class="card-title" style="color: aliceblue;">Jordan Stay Loyal 3</h5>
+                  <p class="card-text" style="color: aliceblue;">Zapatilla hombre <br> $99.990CLP</p>
+                  <a href="espZapa.html" class="btn btn-dark">IR</a>
+                  <button onclick="agregarAlCarrito(0)" class="btn btn-primary">Agregar al carrito</button>
                 </div>
               </div>
               <div class="card bg-dark" style="width: 18rem;" data-brand="Nike">
                 <img src="img/img7.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"style="color: aliceblue;">Nike Dunk Low SE</h5>
-                  <p class="card-text"style="color: aliceblue;">Zapatilla hombre <br> $126.990</p>
-                  <a href="#" class="btn btn-dark">IR</a>
+                  <h5 class="card-title" style="color: aliceblue;">Nike Dunk Low SE</h5>
+                  <p class="card-text" style="color: aliceblue;">Zapatilla hombre <br> $126.990</p>
+                  <a href="espZapa.html" class="btn btn-dark">IR</a>
+                  <button onclick="agregarAlCarrito(0)" class="btn btn-primary">Agregar al carrito</button>
                 </div>
               </div>
               <div class="card bg-dark" style="width: 18rem;" data-brand="Nike">
                 <img src="img/img8.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"style="color: aliceblue;">Nike Dunk Low Retro NBHD</h5>
-                  <p class="card-text"style="color: aliceblue;">Zapatilla hombre <br> $126.990CLP</p>
-                  <a href="#" class="btn btn-dark">IR</a>
+                  <h5 class="card-title" style="color: aliceblue;">Nike Dunk Low Retro NBHD</h5>
+                  <p class="card-text" style="color: aliceblue;">Zapatilla hombre <br> $126.990CLP</p>
+                  <a href="espZapa.html" class="btn btn-dark">IR</a>
+                  <button onclick="agregarAlCarrito(0)" class="btn btn-primary">Agregar al carrito</button>
                 </div>
               </div>
               <div class="card bg-dark" style="width: 18rem;" data-brand="Nike">
                 <img src="img/im9.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"style="color: aliceblue;">Nike Blazer Mid Pro GT</h5>
-                  <p class="card-text"style="color: aliceblue;">Zapatilla hombre <br> $106.990CLP</p>
-                  <a href="#" class="btn btn-dark">IR</a>
+                  <h5 class="card-title" style="color: aliceblue;">Nike Blazer Mid Pro GT</h5>
+                  <p class="card-text" style="color: aliceblue;">Zapatilla hombre <br> $106.990CLP</p>
+                  <a href="espZapa.html" class="btn btn-dark">IR</a>
+                  <button onclick="agregarAlCarrito(0)" class="btn btn-primary">Agregar al carrito</button>
                 </div>
-              </div>     
+              </div>
         </div>
-
 </body>
 </html>
