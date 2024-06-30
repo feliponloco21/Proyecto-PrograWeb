@@ -1,0 +1,69 @@
+{% extends 'base/master.html' %}
+{% load static %}
+
+{% block title %}
+  Urban Emporium
+{% endblock %}
+
+{% block content %}
+<h1 class="titulos"><b>URBAN EMPORIUM</b></h1>
+<br><br>
+<!-- Carousel -->
+<div class="carousel-container">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active d-item">
+        <img src="{% static 'img/carrusel-air1.jpg' %}" class="d-block w-100 d-img" alt="slider 1">
+      </div>
+      <div class="carousel-item d-item">
+        <img src="{% static 'img/carrusel-air2.jpg' %}" class="d-block w-100 d-img" alt="slider 1">
+      </div>
+      <div class="carousel-item d-item">
+        <img src="{% static 'img/carrusel-air3.jpg' %}" class="d-block w-100 d-img" alt="slider 1">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<br><br>
+<h3>Tienda de calzado para todas las edades y épocas</h3>
+<div class="imagen-zap">
+  <a class="zapa" href="{% url 'espzapa' %}"><img src="{% static 'img/img1.jpeg' %}" alt="" class="img-ampliada"></a>
+  <div class="cont-text">
+    <br>
+    <h4>Air Force 1</h4>
+    <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur aperiam doloribus itaque porro modi earum exercitationem possimus eius quasi corporis, libero sequi magni consectetur fuga ipsa neque. Ipsa, dicta ad.</p>
+  </div>
+</div>
+<div class="imagen-zap">
+  <a class="zapa" href="."><img src="{% static 'img/img2.jpeg' %}" alt="" class="img-ampliada"></a>
+  <div class="cont-text">
+    <br>
+    <h4>Nike Air Jordan 1</h4>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita possimus quod at ex iste! Non vel odit voluptas sed! Porro natus voluptatem, inventore consequuntur magnam autem architecto blanditiis sit facilis.</p>
+  </div>
+</div>
+<div class="imagen-zap">
+  <a class="zapa" href="."><img src="{% static 'img/img3.jpeg' %}" alt="" class="img-ampliada"></a>
+  <div class="cont-text">
+    <br>
+    <h4>Blazer Mid '77 Next Nature</h4>
+    <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga repellat minus corporis suscipit expedita autem nemo neque pariatur commodi? Ullam, eligendi dolore totam veritatis ducimus reiciendis repellendus? Voluptate, perspiciatis iste.</p>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock %}

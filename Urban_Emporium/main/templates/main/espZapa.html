@@ -1,0 +1,76 @@
+{% extends 'base/master.html' %}
+{% load static %}
+
+{% block title %}
+  Urban Emporium
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <img class="img-fluid w-51" src="{% static 'img/img1.jpeg' %}" alt="First slide">
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="des-air text-center">
+                  <h5 class="h5-p-d">Nike Air Force 1</h5>
+                  <p class="parr-air">
+                    Zapatillas para Hombre <br>
+                    $116.990 <br>
+                    Hasta 6x $19.499 sin interés <br>
+                  </p>
+                  <div class="ag-carro">
+                    <button onclick="agregarAlCarrito(0)" class="btn btn-primary">Agregar al carrito</button>
+                  </div>
+                  <div class="img-cora">
+                    <button onclick="alert('Se agrego Nike Air Force 1 a deseados')">
+                      <img src="{% static 'img/cora.png' %}" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="contenedor-tallas">
+        <div class="tallas-form">
+            <h2>Elige tu talla</h2>
+            <form action="#">
+                <div class="tallas-opciones">
+                    <input type="radio" id="talla-40" name="talla" value="40">
+                    <label for="talla-40">40</label>
+                    <input type="radio" id="talla-41" name="talla" value="41">
+                    <label for="talla-41">41</label>
+                    <input type="radio" id="talla-42" name="talla" value="42">
+                    <label for="talla-42">42</label>
+                    <input type="radio" id="talla-43" name="talla" value="43">
+                    <label for="talla-43">43</label>
+                    <input type="radio" id="talla-44" name="talla" value="44">
+                    <label for="talla-44">44</label>
+                    <input type="radio" id="talla-45" name="talla" value="45">
+                    <label for="talla-45">45</label>
+                    <input type="radio" id="talla-46" name="talla" value="46">
+                    <label for="talla-46">46</label>
+                    <input type="radio" id="talla-47" name="talla" value="47">
+                    <label for="talla-47">47</label>
+                    <input type="radio" id="talla-48" name="talla" value="48">
+                    <label for="talla-48">48</label>
+                    <input type="radio" id="talla-49" name="talla" value="49">
+                    <label for="talla-49">49</label>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="texto-h6">
+            <h6>
+                En las calles de Brooklyn, Diego encontró un par de Nike Air Force 1 en una tienda de segunda mano. 
+                A pesar de su aspecto desgastado, sintió una conexión instantánea. Con cada paso, se sentía invencible, 
+                como si pudiera alcanzar sus sueños con facilidad. Esas zapatillas no solo eran calzado, eran su símbolo de determinación y estilo. 
+                Con ellas, Diego conquistó las canchas y las calles, inspirando a otros con su confianza y pasión por el juego. 
+                Las Nike Air Force 1 se convirtieron en mucho más que simples zapatillas, eran su motor para el éxito.
+            </h6>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/producto.js"></script>
+{% endblock %}
