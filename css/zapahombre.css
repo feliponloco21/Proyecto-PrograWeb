@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.titulosz{
+    text-align: center;
+    color: white;
+    font-family: 'Kirsty';
+    font-size: 60px;
+    background: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
+    margin-left: 480px;
+    margin-right: 480px;
+}
+
+
+body{
+    background: rgb(120, 120, 120)
+}
+
+.nav-item{
+    font-size: 17px;
+    transition: transform 0.3s;
+    color: white; 
+}
+
+.nav-item:hover{
+    transform: scale(1.2);
+}
+
+.custom-btn {
+    background-color: #1F2328;
+    color: #FFFFFF;
+    border-color: #1F2328;
+}
+
+.custom-btn:hover,
+.custom-btn:active {
+    background-color: #6D747A;
+    color: #FFFFFF;
+    border-color: #6D747A;
+}
+
+.navbar-brand{
+    font-size: 35px;
+    height: 60px;
+    width: 40px;
+    color: white;
+    margin-left: 10px;
+}
+
+.nav-estilo{
+    font-family: 'Kirsty';
+}
+
+.cartasgeneral{
+    gap: 50px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% ;
+    margin: 150px;
+}
+
+.carts{
+    background-color: #1F2328;
+}
+
+.btn btn-primary{
+    border-color: black;
+}
+
+.tituloss{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Kirsty';
+    font-size: 60px;
+    background: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
+    margin-left: 480px;
+    margin-right: 480px;
+}
+
+
+.cartasgene2{
+    margin: 100px;
+    gap: 10px;
+}
+
+
+@media (max-width: 576px) {
+    .card {
+        max-width: 100%;
+    }
+}
+
+.card-title{
+    color: #FFFFFF;
+}
+
+.card-text{
+    color: #FFFFFF;
+}
