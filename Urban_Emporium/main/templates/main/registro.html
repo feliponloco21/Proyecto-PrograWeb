@@ -1,6 +1,5 @@
 {% extends 'base/master.html' %}
 {% load static %}
-{% static 'css/formstyle.css' %}
 
 {% block title %}
   Urban Emporium
@@ -11,7 +10,7 @@
     <div class="container-form">
         <h1>Registrarse</h1>
         <form method="post" action="{% url 'registro' %}">
-            {% csrf_token %}
+            {% csrf_token %} <!-- Asegúrate de incluir el token CSRF aquí -->
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" autofocus placeholder="Ingrese su nombre">
             <br><span id="mensaje1"></span><br>
@@ -34,9 +33,11 @@
             <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" placeholder="Confirme su contraseña">
             <br><span id="mensaje7"></span><br>
             <button type="submit" class="btn btn-primary">Registrarse</button>
+            <a class="btn btn-dark" href="{% url 'listar' %}">Volver</a><br>
         </form>
         {% if mensaje %}
-            <div class="alert alert-danger" role="alert">
+            <div class="alert alert-primary" role="alert">
+                Cliente registrado exitosamente!
                 {{ mensaje }}
             </div>
         {% endif %}

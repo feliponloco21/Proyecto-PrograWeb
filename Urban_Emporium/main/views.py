@@ -4,7 +4,9 @@ from django.contrib import messages
 from django.db import IntegrityError
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.decorators import login_required
+from .forms import ClienteForm
+from django.contrib.auth.forms import UserCreationForm
+
 from django.views import View
 from .models import Cliente
 
@@ -105,3 +107,27 @@ class ProfileView(LoginRequiredMixin, View):
             'clientes': clientes
         }
         return render(request, 'main/perfil.html', context)
+
+# Actualizar clientes
+def edit(request, id_cliente):
+    cliente = get_object_or_404(Cliente, id=id_cliente)
+    if request.method == 'POST':
+        form = ClienteForm(request.POST, instance=cliente)
+        if form.is_valid():
+            form.save()
+            return redirect('listar')
+    else:
+        form = ClienteForm(instance=cliente)
+    return render(request, 'main/ClienteEdit.html', {'form': form, 'cliente': cliente})
+
+
+# Eliminar clientes
+def delete(request, id_cliente):
+    cliente = get_object_or_404(Cliente, pk=id_cliente)
+
+    if request.method == 'POST':
+        cliente.delete()
+        return redirect('listar')
+    else:
+        # Aquí podrías agregar un mensaje de error o redirigir a otra página si no es POST
+        return redirect('listar')

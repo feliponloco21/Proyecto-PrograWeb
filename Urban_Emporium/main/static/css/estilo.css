@@ -127,7 +127,7 @@ h4{
     margin-top: 45px;
     margin-left: 40px;
     margin-right: 40px;
-    box-shadow: 0 12px 15px rgb(0, 0, 0);
+    box-shadow: 5px 12px 15px rgb(0, 0, 0);
 }
 
 .imagen-zap {
@@ -138,7 +138,7 @@ h4{
     padding: 20px;
     width: 80%;
     height: auto;
-    box-shadow: 0 12px 20px rgb(0, 0, 0);
+    box-shadow: 5px 12px 20px rgb(0, 0, 0);
 }
 
 .zapa {
@@ -340,7 +340,7 @@ h6{
 }
 
 .texto-h6{
-    box-shadow: 0 12px 15px rgb(0, 0, 0);
+    box-shadow: 5px 12px 15px rgb(0, 0, 0);
 }
 
 .tallas-form {
@@ -565,7 +565,7 @@ footer {
     padding: 20px;
     background-color: #f0f0f0;
     border-radius: 10px;
-    box-shadow: 0 12px 15px rgb(0, 0, 0);
+    box-shadow: 5 12px 15px rgb(0, 0, 0);
     margin: 10% auto;
     color: #212529;
 }
@@ -588,7 +588,7 @@ footer {
     border: none;
     color: #212529;
     font-weight: bold;
-    box-shadow: 0 4px 6px rgb(0, 0, 0);
+    box-shadow: 2px 4px 6px rgb(0, 0, 0);
     font-size: 20px;
     transition: background-color 0.3s ease;
     width: 50%;
@@ -642,7 +642,7 @@ footer {
     border-radius: 10px;
     padding: 20px;
     transition: .3s;
-    box-shadow: 0 12px 25px rgb(0, 0, 0);
+    box-shadow: 5px 12px 25px rgb(0, 0, 0);
 }
 
 .carrito{
@@ -657,7 +657,7 @@ footer {
     transition: .3s;
     margin-right: -100%;
     opacity: 0;
-    box-shadow: 0 12px 15px rgb(0, 0, 0);
+    box-shadow: 5px 12px 15px rgb(0, 0, 0);
 }
 
 .card-link{
@@ -670,7 +670,7 @@ footer {
     padding: 20px;
     background-color: #f0f0f0;
     border-radius: 10px;
-    box-shadow: 0 12px 15px rgb(0, 0, 0);
+    box-shadow: 5px 12px 20px rgb(0, 0, 0);
     margin: 10% auto;
     color: #212529;
 }
@@ -693,4 +693,28 @@ footer {
     text-align: center;
     font-size: 50px;
     margin-bottom: 20px;
+}
+
+.btn-registro-grande{
+    width: 300px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+
+.btn-registro {
+    width: 100px;
+    height: 50px;
+    padding: 12px 10px;
+    font-size: 15px;
+}
+
+.drop-form{
+    background-color: #080809;
+}
+
+.table{
+    box-shadow: 10px 12px 20px rgb(0, 0, 0);
+    margin-top: 30px;
+    margin-bottom: 140px;
 }

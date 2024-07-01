@@ -26,14 +26,14 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 <section class="contenedor">
   <div class="contenedor-items">
     <div class="card" data-brand="Jordan">
-      <a href="{% url 'espzapa' %}" class="card-link">
-        <div class="item">
+      <div class="item">
+        <a class="card-link" href="{% url 'espzapa' %}">
           <span class="titulo-item">Jordan AF1</span>
-          <img src="{% static 'img/img1.jpeg' %}" alt="" class="img-item">
-          <span class="precio-item">$199.990CLP</span>
-          <button class="boton-item">Agregar al Carrito</button>
-        </div>
-      </a>
+        </a>
+        <img src="{% static 'img/img1.jpeg' %}" alt="" class="img-item">
+        <span class="precio-item">$199.990CLP</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
     </div>
     <div class="card" data-brand="Nike">
       <div class="item">

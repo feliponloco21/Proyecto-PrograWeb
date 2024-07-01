@@ -1,0 +1,26 @@
+{% extends 'base/master.html' %}
+{% load static %}
+
+{% block title %}
+  Urban Emporium
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="container-form">
+        <h1>Actualización</h1>
+        <form method="post" action="#">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Actualizar</button>
+            <a class="btn btn-dark" href="{% url 'listar' %}">Cancelar</a>
+        </form>
+        {% if mensaje %}
+            <div class="alert alert-danger" role="alert">
+                Cliente actualizado exitosamente!
+                {{ mensaje }}
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
