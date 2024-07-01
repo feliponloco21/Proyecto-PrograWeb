@@ -1,0 +1,35 @@
+{% extends 'base/master.html' %}
+{% load static %}
+
+{% block title %}
+  Urban Emporium
+{% endblock %}
+
+{% block content %}
+<div class="cartaredes">
+    <div class="card" style="width: 25rem;">
+        <div class="card-body">
+            <section class="redes-sociales custom-bg-color">
+                <h2 style="color: aliceblue;">Redes Sociales</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>
+<h2 style="text-align: center;" class="mapa">Mapa</h2>
+<section id="map"></section>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtYyXcIgCeK7duNoFXYIcOsyT8IS44Tig&libraries=places&callback=initMap">
+    </script>
+<section style="text-align: center;" class="informacion">
+    <h2 style="color: aliceblue;">Información</h2>
+    <p>Somos una tienda de calzado urbano con personalidad única e inigualable, todo lo que buscas y lo que quieres está aquí!</p>
+    <p>Para más información, contáctanos:</p>
+    <p>Email: info@urbanemporium.com</p>
+    <p>Teléfono: +1234567890</p>
+</section>
+{% endblock %}

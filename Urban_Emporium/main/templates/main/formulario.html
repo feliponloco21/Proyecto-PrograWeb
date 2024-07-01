@@ -1,0 +1,37 @@
+{% extends 'base/master.html' %}
+{% load static %}
+{% static 'css/formstyle.css' %}
+
+{% block title %}
+  Urban Emporium
+{% endblock %}
+
+{% block content %}
+<form class="inisesion" method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    <h1>LOGIN</h1>
+    <div class="form-group">
+        <label for="InputEmail1">Ingrese su correo electrónico:</label>
+        <input type="email" class="form-control" name="email" id="InputEmail1" placeholder="Ingrese correo electrónico">
+        <span id="mensajecorreo"></span>
+    </div>
+    <div class="form-group">
+        <label for="InputPassword1">Ingrese su Contraseña:</label>
+        <input type="password" class="form-control" name="password" id="InputPassword1" placeholder="Contraseña">
+        <span id="mensajecontra"></span>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+    </div>
+    <button type="submit" class="btn btn-warning">Iniciar Sesión</button>
+    <a href="{% url 'registro' %}">¿No estas registrado?</a>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-danger" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+</form>
+{% endblock %}

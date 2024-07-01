@@ -1,0 +1,155 @@
+{% extends 'base/master.html' %} 
+{% load static %} 
+
+{% block title %} 
+Urban Emporium 
+{% endblock %} 
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="{% static 'css/newhombre.css' %}">
+<!-- filtros de zapatillas -->
+<div class="container tituloss">
+  <h1>Zapatillas hombre</h1>
+  <div class="filtro-marca">
+    <label for="brand-filter" class="form-label mr-2">Filtrar por Marca:</label>
+    <select class="form-select" id="brand-filter">
+      <option value="all">Todas las marcas</option>
+      <option value="Jordan">Jordan</option>
+      <option value="Nike">Nike</option>
+    </select>
+  </div>
+</div>
+
+<section class="contenedor">
+  <div class="contenedor-items">
+    <div class="card" data-brand="Jordan">
+      <div class="item">
+        <a class="card-link" href="{% url 'espzapa' %}">
+          <span class="titulo-item">Jordan AF1</span>
+        </a>
+        <img src="{% static 'img/img1.jpeg' %}" alt="" class="img-item">
+        <span class="precio-item">$199.990CLP</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+    </div>
+    <div class="card" data-brand="Nike">
+      <div class="item">
+          <span class="titulo-item">Nike Blazer Mid '77 Vintage</span>
+          <img src="{% static 'img/img2.jpeg' %}" alt="" class="img-item">
+          <span class="precio-item">$112.990CLP</span>
+          <button class="boton-item">Agregar al Carrito</button>
+      </div>
+    </div>
+    <div class="card" data-brand="Jordan">
+      <div class="item">
+          <span class="titulo-item">Jordan air 1 mid</span>
+          <img src="{% static 'img/img3.jpeg' %}" alt="" class="img-item">
+          <span class="precio-item">$129.990CLP</span>
+          <button class="boton-item">Agregar al Carrito</button>
+      </div>
+    </div>
+    <div class="card" data-brand="Jordan">
+      <div class="item">
+          <span class="titulo-item">Jordan Max aura 5</span>
+          <img src="{% static 'img/img4.jpeg' %}" alt="" class="img-item">
+          <span class="precio-item">$134.990CLP</span>
+          <button class="boton-item">Agregar al Carrito</button>
+      </div>
+    </div>
+    <div class="card" data-brand="Jordan">
+      <div class="item">
+          <span class="titulo-item">Jordan Spizike Low</span>
+          <img src="{% static 'img/img5.jpeg' %}" alt="" class="img-item">
+          <span class="precio-item">$162.990CLP</span>
+          <button class="boton-item">Agregar al Carrito</button>
+      </div>
+    </div>
+    <div class="card" data-brand="Jordan">
+      <div class="item">
+          <span class="titulo-item">Jordan Stay Loyal 3</span>
+          <img src="{% static 'img/img6.jpeg' %}" alt="" class="img-item">
+          <span class="precio-item">$99.990CLP</span>
+          <button class="boton-item">Agregar al Carrito</button>
+      </div>
+    </div>
+    <div class="card" data-brand="Nike">
+      <div class="item">
+          <span class="titulo-item">Nike Dunk Low SE</span>
+          <img src="{% static 'img/img7.jpeg' %}" alt="" class="img-item">
+          <span class="precio-item">$126.990CLP</span>
+          <button class="boton-item">Agregar al Carrito</button>
+      </div>
+    </div>
+    <div class="card" data-brand="Nike">
+      <div class="item">
+          <span class="titulo-item">Nike Dunk Low Retro NBHD</span>
+          <img src="{% static 'img/img8.jpeg' %}" alt="" class="img-item">
+          <span class="precio-item">$126.990CLP</span>
+          <button class="boton-item">Agregar al Carrito</button>
+      </div>
+    </div>
+    <div class="card" data-brand="Nike">
+      <div class="item">
+          <span class="titulo-item">Nike Blazer Mid Pro GTe</span>
+          <img src="{% static 'img/im9.jpeg' %}" alt="" class="img-item">
+          <span class="precio-item">$106.990CLP</span>
+          <button class="boton-item">Agregar al Carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carrito de Compras -->
+  <div class="carrito" id="carrito">
+      <div class="header-carrito">
+          <h2>Tu Carrito</h2>
+      </div>
+
+      <div class="carrito-items">
+          <!-- 
+          <div class="carrito-item">
+              <img src="img/boxengasse.png" width="80px" alt="">
+              <div class="carrito-item-detalles">
+                  <span class="carrito-item-titulo">Box Engasse</span>
+                  <div class="selector-cantidad">
+                      <i class="fa-solid fa-minus restar-cantidad"></i>
+                      <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                      <i class="fa-solid fa-plus sumar-cantidad"></i>
+                  </div>
+                  <span class="carrito-item-precio">$15.000,00</span>
+              </div>
+             <span class="btn-eliminar">
+                  <i class="fa-solid fa-trash"></i>
+             </span>
+          </div>
+          <div class="carrito-item">
+              <img src="img/skinglam.png" width="80px" alt="">
+              <div class="carrito-item-detalles">
+                  <span class="carrito-item-titulo">Skin Glam</span>
+                  <div class="selector-cantidad">
+                      <i class="fa-solid fa-minus restar-cantidad"></i>
+                      <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                      <i class="fa-solid fa-plus sumar-cantidad"></i>
+                  </div>
+                  <span class="carrito-item-precio">$18.000,00</span>
+              </div>
+             <button class="btn-eliminar">
+                  <i class="fa-solid fa-trash"></i>
+             </button>
+          </div>
+           -->
+      </div>
+      <div class="carrito-total">
+          <div class="fila">
+              <strong>Tu Total</strong>
+              <span class="carrito-precio-total">
+                  $120.000,00
+              </span>
+          </div>
+          <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+      </div>
+  </div>
+</section>
+{% endblock %}
